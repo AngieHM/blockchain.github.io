@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BlockchainDemo</title>
+	<!-- CSS files for the creative Tim project  -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	 <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Javascript filr for the sha256 libary-->
+	<script type="text/javascript" src="sha256.js"></script>
+</head>
+<body>
+	<div class="card card-nav-tabs card-plain">
+		<div class="header header-danger">
+			<!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+			<div class="nav-tabs-navigation">
+				<div class="nav-tabs-wrapper">
+					<ul id="user_add_box" class="nav nav-tabs" data-tabs="tabs">
+						<li class="active"><a href="#home" data-toggle="tab">Sato</a><button class="connect" id="connect1" onclick="synchChain()"></button></li>
+						<li style="float: right;"><button id="add_user" class="btn btn-info" style="float: right; border-radius: 15px;">Add user</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h2 class="center">Blockchain</h2>
+		<p class="center">Click on the blue button beside the users to synch their blockchain</p>
+		<div class="content">
+			<div class="tab-content" id="content_append">
+				<div class="tab-pane active" id="home">
+					<div class="card card-signup" style="width: 100%;">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="data">
+							</div>
+							<div class="hash" style="display: inline-flex;"><p>Hash : </p><p>dc75a315c77a1f9c98fb6247d03dd18ac52632d7dc6a9920261d8109b37cf00</p></div>	
+							<div></div>
+							<div class="hash" style="display: inline-flex;"><p>PreviousHash : </p><p>0</p></div>
+					</div>
+					<div id="main_container">
+					
+					</div>
+					<div class="card card-signup">
+							<div class="input-group">
+								<input type="text" id="input_data1" class="form-control" placeholder="Add data">
+							</div>
+						<div class="footer text-center">
+							<button id ="1" class="btn btn-danger" onclick="isClicked()" style="background: linear-gradient(45deg,#d4145a,#fbb03b); padding: 20px; padding-left: 20px; padding-right: 20px; border-radius: 15px;">Add data</button>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="spinning">
+		<hr class="line">
+		<hr class="line_1">
+	</div>
+	<!-- Javascript files-->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+	<!-- Javascript blockchain file-->
+	<script type="text/javascript" src="Blockchain.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+.card .header-danger{
+	background: linear-gradient(60deg, #669999, #43877C);
+}
+.card-plain{
+	z-index: 950;
+}
+.content-add{
+	width: 100%;
+}
+.spinning{
+	z-index: 900;
+	margin-top: -200px;
+	position: relative;
+
+}
+.tab-pane{
+	width: 80%;
+	margin: 0 auto;
+}
+.card-signup{
+	padding: 20px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.center{
+
+	text-align: center;
+}
+
+.connect{
+	background-color: #03a9f4;
+	border-radius: 50%;
+	width: 5px;
+	padding: 5px;
+}
+.connect:hover{
+	background-color: #5FF200;
+	padding: 5.5px;
+	transition: 0.1s all;
+}
+.arrow_down{
+
+	text-align: center;
+	width: 92%;
+	color: #03a9f4;
+	font-size: 35px;
+}
+.line{
+	background-color: #407F7F;
+	height: 2px;
+	width: 20%;
+	transform: rotate(360deg);
+	animation-name: spina;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite;
+	animation-duration: 9000ms;
+}
+
+.line_1{
+	width: 20%;
+	height: 2px;
+	transform: rotate(-360deg);
+	background-color: #6E92A1;
+	animation-name: spins;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite;
+	animation-duration: 9000ms;
+}
+@keyframes spina{
+
+	from{
+		transform: rotate(360deg);
+	}
+
+	to{
+		transform: rotate(-360deg);
+	}
+}
+@keyframes spins{
+
+	from{
+		transform: rotate(-360deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}
+}

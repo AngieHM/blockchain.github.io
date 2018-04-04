@@ -10,9 +10,11 @@
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Javascript filr for the sha256 libary-->
+	<script type="text/javascript" src="particles/particles.js"></script>
 	<script type="text/javascript" src="sha256.js"></script>
 </head>
 <body>
+	<div id="particles-js"></div>
 	<div class="card card-nav-tabs card-plain">
 		<div class="header header-danger">
 			<!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
@@ -46,7 +48,7 @@
 								<input type="text" id="input_data1" class="form-control" placeholder="Add data">
 							</div>
 						<div class="footer text-center">
-							<button id ="1" class="btn btn-danger" onclick="isClicked()" style="background: linear-gradient(45deg,#d4145a,#fbb03b); padding: 20px; padding-left: 20px; padding-right: 20px; border-radius: 15px;">Add data</button>
+							<button id ="1" class="btn btn-danger" onclick="isClicked(event)" style="background: linear-gradient(45deg,#d4145a,#fbb03b); padding: 20px; padding-left: 20px; padding-right: 20px; border-radius: 15px;">Add data</button>
 						</div>
 					
 					</div>
@@ -54,10 +56,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="spinning">
-		<hr class="line">
-		<hr class="line_1">
-	</div>
+	<script src="particles/demo/js/app.js"></script>
 	<!-- Javascript files-->
 	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>

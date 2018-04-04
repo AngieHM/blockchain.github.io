@@ -114,7 +114,7 @@ function addUser(){
 		<input type="text" id="input_data${number}" class="form-control" placeholder="Add data">
 		</div>
 		<div class="footer text-center">
-		<button id = "${number}"class="btn btn-danger" onclick="isClicked()" style="background: linear-gradient(45deg,#d4145a,#fbb03b); padding: 20px; padding-left: 20px; padding-right: 20px; border-radius: 15px;">Add data</button>
+		<button id = "${number}"class="btn btn-danger" onclick="isClicked(event)" style="background: linear-gradient(45deg,#d4145a,#fbb03b); padding: 20px; padding-left: 20px; padding-right: 20px; border-radius: 15px;">Add data</button>
 		</div>
 		</div>
 		`;
@@ -158,7 +158,6 @@ function addData(eId,parent,parent_but_one,obj_){
 		p_arrow.className = "arrow_down";
 
 		//Appending all the elements to the main DIV
-		hash_div.appendChild(p_arrow);
 		hash_div.appendChild(p_plain_text);
 		hash_div.appendChild(p_data);
 		hash_div.appendChild(p_previous_hash);
